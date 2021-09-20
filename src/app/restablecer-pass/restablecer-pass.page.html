@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Restablecer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h2 class="titulo-retablecer">Restablecer Contraseña</h2>
+
+  <div class="ion-card-content">
+    <ion-item>
+      <ion-label position="floating ion-text-center"> Nombre de usuario</ion-label>
+      <ion-input class="input" type="text"> </ion-input>
+    </ion-item>
+    <ion-item>
+      <p class="parrafo">Escribe un nombre de usuario para asociado a tu cuenta y te enviaremos un email 
+        para restablecer tu contraseña
+      </p>
+    </ion-item>
+    <ion-item>
+      <ion-button class="boton" color="success" [routerLink]="['/home-logeado']">RECUPERAR</ion-button>
+    </ion-item>
+    <ion-button class="boton-volver" size="small" [routerLink]="['/home']">Volver</ion-button>
+  </div>
+</ion-content>
