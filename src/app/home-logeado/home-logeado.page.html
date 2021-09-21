@@ -5,16 +5,18 @@
 </ion-header>
 
 <ion-content>
-  <h2>BIENVENIDO</h2>
+  <img class="logo" src="../../assets/img/logo.PNG" alt="">
+
   <div class="ion-card-content">
-    <h3>Hoy Quiero ser..</h3>
+    <h3 class="subtitulo" > {{dato}}, ¿Que quieres ser Hoy?</h3>
     <ion-item>
-      <ion-button class="boton-eleccion" color="tertiary">Chofer</ion-button>
+      <ion-button class="boton-eleccion" color="warning">Chofer</ion-button>
+      <img class="img" src="../../assets/img/chofer.png" alt="">
   </ion-item>
     <ion-item>
-      <ion-button class="boton-eleccion" color="secondary">Pasajero</ion-button>
+      <ion-button class="boton-eleccion" color="warning">Pasajero</ion-button>
+      <img class="pasajero" src="../../assets/img/pasajero.png" alt="">
   </ion-item>
-  <ion-button class="boton" color="success">Aceptar</ion-button>
   </div>
-  <ion-button size="small" class="boton-volver" [routerLink]="['/home'] ">Volver</ion-button>
+  <ion-button size="small" class="boton-volver" [routerLink]="['/home'] ">Salir</ion-button>
 </ion-content>

@@ -11,7 +11,7 @@
   <div class="ion-card-content">
     <ion-item>
       <ion-label position="floating ion-text-center"> Nombre de usuario</ion-label>
-      <ion-input class="input" type="text"> </ion-input>
+      <ion-input class="input" type="text" [(ngModel)]="dato"> </ion-input>
     </ion-item>
     <ion-item>
       <p class="parrafo">Escribe un nombre de usuario para asociado a tu cuenta y te enviaremos un email 
@@ -19,8 +19,8 @@
       </p>
     </ion-item>
     <ion-item>
-      <ion-button class="boton" color="success" [routerLink]="['/home-logeado']">RECUPERAR</ion-button>
+      <ion-button class="boton" color="success" (click)="email()" shape="block" >RECUPERAR</ion-button>
     </ion-item>
-    <ion-button class="boton-volver" size="small" [routerLink]="['/home']">Volver</ion-button>
+    <ion-button class="boton-volver"  size="small" [routerLink]="['/home']">Volver</ion-button>
   </div>
 </ion-content>
