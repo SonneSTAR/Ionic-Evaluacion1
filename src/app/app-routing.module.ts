@@ -18,7 +18,11 @@ const routes: Routes = [
   {
     path: 'home-logeado',
     loadChildren: () => import('./home-logeado/home-logeado.module').then( m => m.HomeLogeadoPageModule)
+  },  {
+    path: 'api',
+    loadChildren: () => import('./api/api.module').then( m => m.ApiPageModule)
   },
+
 ];
 
 @NgModule({
